@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protfolio</title>
+    <link rel="icon" href="images/logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <h3><span
+                style="color: aqua;font-family: 'Allura', cursive;font-weight: bolder;font-size: xx-large;">C</span>hitra
+            <span
+                style="font-family: 'Allura', cursive;color: aqua; font-weight: bolder;font-size: xx-large;">B</span>anu
+        </h3>
+        <div class="navbarlink">
+            <p><a href="#home">Home</a></p>
+            <p><a href="#aboutcon">About</a></p>
+            <p><a href="#experience">Experience</a></p>
+            <p><a href="#project">Projects</a></p>
+            <p><a href="#skill">Skill</a></p>
+            <p><a href="#contact">Contact</a></p>
+        </div>
+        <div class="navicon" onclick="shownav()"><i class="fa-solid fa-bars"></i></div>
+    </nav>
+
+    <div class="sidenavbar">
+        <p style="text-align: right;" onclick="closenav()"><i class="fa-solid fa-xmark"></i></p>
+        <div class="sidenavbarlink">
+            <p class="sidenav"><a href="#home">Home</a></p>
+            <p class="sidenav"><a href="#aboutcon">About</a></p>
+            <p class="sidenav"><a href="#experience">Experience</a></p>
+            <p class="sidenav"><a href="#project">Projects</a></p>
+            <p class="sidenav"><a href="#skill">Skill</a></p>
+            <p class="sidenav"><a href="#contact">Contact</a></p>
+        </div>
+    </div>
+
+    <section id="home">
+        <div class="profilecon">
+            <div class="proimg">
+                <img src="images/banu.png" class="pic">
+            </div>
+
+            <div class="profile">
+                <div class="intro">
+                    <h2>Hello, My name is <span style="font-family: 'Allura', cursive; color: aqua;">Chitra Banu</span>
+                    </h2>
+                </div>
+                <div class="me">
+                    <h2>I'm a <span id="dev" style="color: aqua;">Front-end Developer</span></h2>
+                </div>
+                <div class="para">
+                    <h4>My passion lies in crafting visually stunning and highly interactive websites that
+                        provide an exceptional user experience.</h4>
+                </div>
+                <a href="banuresume.pdf" type="button" class="probtn">View CV</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="aboutcon">
+        <div>
+            <h1>About <span style="color: aqua;">Me</span></h1>
+        </div>
+        <div class="card">
+            <div class="cardpara">
+
+                <h3>I am a dedicated and enthusiastic Front-end Developer with a strong foundation in HTML, CSS, and
+                    JavaScript. My passion lies in crafting visually stunning and highly interactive websites that
+                    provide an exceptional user experience. I thrive on the challenge of turning complex design concepts
+                    into reality, ensuring that every site I develop is both aesthetically pleasing and functionally
+                    robust<span id="dot">...</span>
+                    <span id="moretext"> I am particularly interested in exploring new front-end technologies and
+                        frameworks, which allows me to bring innovative solutions to the projects I undertake. My goal
+                        is to create seamless and responsive web interfaces that exceed user expectations.I enjoy
+                        creating visually appealing and user-friendly websites, and I am always eager to learn and apply
+                        new technologies in Front-end development.
+                    </span>
+                </h3>
+
+                <button class="morebtn" onclick="clickmore()">Read more...</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience">
+        <div>
+            <h1><span style="color: aqua;">E</span>xperience</h1>
+        </div>
+
+        <div class="expcon">
+            <div class="card1">
+                <div class="card1img"><img src="images/fs.png"></div>
+                <h3>Front-end Development</h3>
+                <p>I have a solid foundation in HTML, CSS, and JavaScript Despite being in the learning phase, I have
+                    already completed some projects that have allowed me to apply what I've learned practically.<span
+                        id="dots">...</span><span id="moret">These projects have helped me gain hands-on experience in
+                        creating structured web content, designing responsive layouts, and adding interactivity to web
+                        pages. I am eager and curious to take on more projects to further deepen my understanding and
+                        improve my proficiency in these technologies.</span></p>
+                <button class="mbtn" onclick="clickm()">Read more...</button>
+
+            </div>
+
+            <div class="card2">
+                <div class="card2img"><img src="images/figma1.png"></div>
+                <h3>UI/UX Designing</h3>
+                <p>I possess a foundational understanding of UI/UX design principles and practices. My basic
+                    knowledge includes<span id="dotss">...</span><span id="moretx">familiarity with essential tools and
+                        techniques used in creating user-friendly
+                        interfaces and experiences by working on Figma tool . I am eager to apply my skills in
+                        real-world
+                        projects and continuously learn and grow in this field.</span></p>
+                <button class="morebutn" onclick="moretxt()">Read more...</button>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="project">
+        <div>
+            <h1 class="projtit">My <span style="color: aqua;">Projects</span></h1>
+        </div>
+        <div class="proj">
+            <button class="beforebtn"><img src="images/arrow.png" alt=""></button>
+            <button class="nxtbtn"><img src="images/arrow.png" alt=""></button>
+
+            <div class="projcon">
+                <div class="projcard">
+                    <div class="projimg">
+                        <img src="images/todo.jpg" class="projc">
+                        <a href="https://chitrabanu.neocities.org/ToDo%20list%20/todo" type="button" class="cardbtn" style="text-decoration: none; color: white;">View Project<br><br><span style="color: aqua;">ToDolist</span></a>
+                    </div>
+                </div>
+
+                <div class="projcard">
+                    <div class="projimg">
+                        <img src="images/book.jpg" class="projc">
+                        <a href="https://chitrabanu.neocities.org/Digibooks/booksward" type="button" class="cardbtn" style="text-decoration: none; color: white;">View Project<br><br><span style="color: aqua;">E-lib</span></a>
+                    </div>
+                </div>
+
+                <div class="projcard">
+                    <div class="projimg">
+                        <img src="images/cakeproject.jpg" class="projc">
+                        <a href="https://chitrabanu.neocities.org/landing%20page/home" type="button" class="cardbtn" style="text-decoration: none; color: white;">View Project<br><br><span style="color: aqua;">Cake Fantacy</span></a>
+                    </div>
+                </div>
+
+                <div class="projcard">
+                    <div class="projimg">
+                        <img src="images/boot.jpg" class="projc">
+                        <h2 class="projname">Responsive page Using BOOTSTRAP</h2>
+                        <a href="https://chitrabanu.neocities.org/landing%20page%20using%20bootstrap/" type="button" class="cardbtn" style="text-decoration: none; color: white;">View Project<br><br><span style="color: aqua;">Responsive page using Bootstrap</span></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section id="skill">
+        <div class="skilltit">
+            <div>
+                <h1>My <span style="color: aqua;">Skills</span></h1>
+            </div>
+            <div class="skillimg">
+                <img src="images/html.png" class="html">
+                <img src="images/css.png" class="css">
+                <img src="images/js.png" class="js">
+                <img src="images/figma1.png" class="ui">
+                <img src="images/py.png" class="py">
+                <img src="images/java.png" class="java">
+                <img src="images/c.png" class="c">
+            </div>
+        </div>
+        <div class="skillcon">
+            <li>
+                <h3>HTML</h3>
+                <p>95%</p>
+                <span class="box"><span class="html"></span></span>
+            </li>
+
+            <li>
+                <h3>CSS</h3>
+                <p>78%</p>
+                <span class="box"><span class="css"></span></span>
+            </li>
+
+            <li>
+                <h3>JavaScript</h3>
+                <p>65%</p>
+                <span class="box"><span class="javascript"></span></span>
+            </li>
+
+            <li>
+                <h3>UI/UX</h3>
+                <p>65%</p>
+                <span class="box"><span class="ui"></span></span>
+            </li>
+
+            <li>
+                <h3>Python</h3>
+                <p>75%</p>
+                <span class="box"><span class="python"></span></span>
+            </li>
+
+            <li>
+                <h3>Java</h3>
+                <p>65%</p>
+                <span class="box"><span class="java"></span></span>
+            </li>
+
+            <li>
+                <h3>C Language</h3>
+                <p>65%</p>
+                <span class="box"><span class="c"></span></span>
+            </li>
+        </div>
+    </section>
+
+    <section id="contact">
+        <form class="contactform">
+            <div>
+                <h1><span style="color: aqua;">C</span>ontact</h1>
+            </div>
+            <div class="divi">
+                <input type="text" placeholder="Name">
+                <input type="text" placeholder="Email">
+                <input type="text" placeholder="Subject">
+                <textarea placeholder="message"></textarea>
+                <button>Send Message</button>
+            </div>
+        </form>
+        <div class="conimg">
+            <div class="co1"><i class="fa-brands fa-linkedin"></i></div>
+            <div class="co2"><i class="fa-brands fa-github"></i></div>
+            <div class="co3"><i class="fa-brands fa-whatsapp"></i></div>
+            <div class="co4"><i class="fa-brands fa-telegram"></i></div>
+        </div>
+        <a href="#home"><span id="upicon"><i class="fa-solid fa-arrow-up-from-bracket"></i></span></a>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

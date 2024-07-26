@@ -1,0 +1,784 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Allura&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Josefin Sans", sans-serif;
+    background-color: rgb(11, 1, 37);
+    color: aliceblue;
+}
+
+/*navigationbar*/
+.navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 70;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    backdrop-filter: blur(2px);
+    box-shadow: rgba(0, 0, 0, 0.733) 0px 4px 12px;
+    background-color: rgba(31, 35, 37, 0.295);
+}
+
+.navbarlink {
+    display: flex;
+    column-gap: 10px;
+}
+
+.navbarlink a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.navbarlink a:hover {
+    cursor: pointer;
+    color: aqua;
+    text-decoration: underline;
+}
+
+.navicon {
+    display: none;
+}
+
+.navicon:hover {
+    cursor: pointer;
+    color: aqua;
+}
+
+/*side navigationbar*/
+.sidenavbar {
+    background-color: rgba(31, 35, 37, 0.295);
+    color: white;
+    width: 50%;
+    height: 100%;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    right: -65%;
+    transition: 1.5s;
+    backdrop-filter: blur(5px);
+    z-index: 100;
+    border-radius: 30px 0 0 30px;
+    box-shadow: rgba(0, 0, 0, 0.603) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.sidenav {
+    margin-bottom: 50px;
+    font-size: larger;
+}
+
+.sidenavbarlink a {
+    text-decoration: none;
+    color: white
+}
+
+.sidenavbarlink a:hover {
+    text-decoration: underline;
+}
+
+/*home section*/
+#home {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10%;
+    min-height: 100vh;
+    align-items: center;
+}
+
+.profilecon {
+    display: flex;
+    padding: 10px;
+    flex-direction: row;
+    position: relative;
+}
+
+.proimg img {
+    position: relative;
+    height: 260px;
+    border-radius: 40%;
+    width: 210px;
+    text-align: right;
+    box-shadow: rgba(0, 0, 0, 0.404) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    animation: imganimate 2s infinite;
+}
+
+@keyframes imganimate {
+    0% {
+        transform: translatey(0);
+    }
+
+    50% {
+        transform: translatey(-5px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.profile {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+
+.intro {
+    display: flex;
+    padding: 6px;
+    text-align: center;
+}
+
+.me {
+    display: flex;
+    padding: 6px;
+    text-align: center;
+}
+
+.para {
+    display: flex;
+    padding: 6px;
+    margin-left: 30px;
+    text-align: center;
+}
+
+.probtn {
+    border: rgba(149, 15, 226, 0.267) solid 2px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 10%;
+    border-radius: 20px;
+}
+
+.probtn {
+    text-decoration: none;
+    color: antiquewhite;
+}
+
+.probtn:hover {
+    background-color: rgba(149, 15, 226, 0.267);
+    cursor: pointer;
+    box-shadow: rgba(43, 2, 90, 0.753) 0px 4px 12px;
+}
+
+/*about section*/
+#aboutcon {
+    min-height: 100vh;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#aboutcon div h1 {
+    color: aliceblue;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 70px;
+}
+
+.card {
+    display: flex;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.cardpara {
+    justify-content: center;
+    line-height: 30px;
+}
+
+
+#moretext {
+    display: none;
+}
+
+.morebtn {
+    font-size: larger;
+    font-weight: bold;
+    background-color: transparent;
+    border: none;
+    color: red;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+/*experience section*/
+#experience {
+    width: 100%;
+    justify-content: space-around;
+    min-height: 100vh;
+    align-items: center;
+}
+
+#experience div h1 {
+    color: aliceblue;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 70px;
+}
+
+.expcon {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 30px;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.expcon .card1 {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    border: rgba(149, 15, 226, 0.267) solid 2px;
+    align-items: center;
+    padding: 30px;
+    border-radius: 60px 5px 20px 40px;
+    color: white;
+    position: relative;
+}
+
+.expcon .card1:hover {
+    box-shadow: rgba(43, 2, 90, 0.753) 0px 4px 12px;
+}
+
+.expcon .card1img img {
+    width: 60px;
+    height: 50px;
+    position: absolute;
+    margin-left: -8%;
+    top: 10px;
+}
+
+.expcon .card1 h3 {
+    margin-top: 50px;
+    margin-bottom: 10px;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.expcon .card1 p {
+    line-height: 30px;
+}
+
+#moret {
+    display: none;
+}
+
+.mbtn {
+    font-size: large;
+    font-weight: bold;
+    background-color: transparent;
+    border: none;
+    color: red;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+    cursor: pointer;
+
+}
+
+.expcon .card2 {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    border: rgba(149, 15, 226, 0.267) solid 2px;
+    align-items: center;
+    padding: 30px;
+    border-radius: 60px 5px 20px 40px;
+    color: white;
+    position: relative;
+}
+
+.expcon .card2:hover {
+    box-shadow: rgba(43, 2, 90, 0.753) 0px 4px 12px;
+}
+
+.expcon .card2img img {
+    width: 60px;
+    height: 50px;
+    position: absolute;
+    margin-left: -8%;
+    top: 10px;
+}
+
+.expcon .card2 h3 {
+    margin-top: 50px;
+    margin-bottom: 10px;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.expcon .card2 p {
+    line-height: 30px;
+}
+
+#moretx {
+    display: none;
+}
+
+.morebutn {
+    font-size: large;
+    font-weight: bold;
+    background-color: transparent;
+    border: none;
+    color: red;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+/*project section*/
+#project {
+    width: 100%;
+    justify-content: space-around;
+    min-height: 100vh;
+    align-items: center;
+}
+
+.proj {
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.projtit {
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 70px;
+}
+
+.projcon {
+    display: flex;
+    padding: 0 10vw;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+.projcon::-webkit-scrollbar {
+    display: none;
+}
+
+.projcard {
+    flex: 0 0 auto;
+    width: 450px;
+    height: 250px;
+    margin-right: 40px;
+}
+
+.projimg {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.cardbtn {
+    color: black;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    width: 90%;
+    text-transform: capitalize;
+    background: transparent;
+    transition: 0.5s;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.projc {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.projcard:hover .cardbtn {
+    opacity: 1;
+}
+
+.projcard:hover .projname{
+    opacity: 1;
+}
+
+.cardbtn:hover {
+    background: #42015cd2;
+    border: none;
+}
+
+.beforebtn,
+.nxtbtn {
+    border: none;
+    width: 10vw;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    cursor: pointer;
+    z-index: 8;
+}
+
+.beforebtn {
+    left: 0;
+    transform: rotate(180deg);
+}
+
+.nxtbtn {
+    right: 0;
+}
+
+.beforebtn img,
+.nxtbtn img {
+    opacity: 0.4;
+}
+
+.beforebtn:hover img,
+.nxtbtn:hover img {
+    opacity: 9;
+}
+
+/*skill section*/
+#skill {
+    padding: 10px;
+    width: 100%;
+    justify-content: space-around;
+    min-height: 100vh;
+    align-items: center;
+    background-color: rgb(11, 1, 37);
+    display: flex;
+}
+
+.skilltit {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+.skilltit div h1 {
+    padding: 10px;
+}
+
+.skillimg {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 20px;
+}
+
+.skillimg img {
+    height: 50px;
+    width: 50px;
+}
+
+.skillcon {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 50%;
+    margin-top: 50px;
+}
+
+#skill li {
+    width: 200px;
+    margin: 20px 0;
+    padding: 10px;
+    list-style: none;
+}
+
+#skill p {
+    text-align: end;
+}
+
+.box {
+    display: block;
+    height: 20px;
+    border: rgba(149, 15, 226, 0.267) solid 2px;
+    box-shadow: rgba(43, 2, 90, 0.753) 0px 4px 12px;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+}
+
+.box span {
+    height: 20px;
+    float: left;
+    background-color: rgba(149, 15, 226, 0.822);
+}
+
+.html {
+    width: 95%;
+    animation: html 3s;
+}
+
+.css {
+    width: 78%;
+    animation: css 3s;
+}
+
+.javascript {
+    width: 65%;
+    animation: javascript 3s;
+}
+
+.ui {
+    width: 65%;
+    animation: ui 3s;
+}
+
+.python {
+    width: 75%;
+    animation: python 3s;
+}
+
+.java {
+    width: 65%;
+    animation: html 3s;
+}
+
+.c {
+    width: 65%;
+    animation: c 3s;
+}
+
+/*contact section*/
+#contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 10%;
+    min-height: 100vh;
+    width: 100%;
+    align-items: center;
+    background-color: rgb(11, 1, 37);
+    padding: 20px;
+}
+
+#contact div h1 {
+    color: white;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.contactform .divi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    border-radius: 60px 5px 20px 40px;
+    gap: 30px;
+}
+
+.contactform .divi input {
+    display: flex;
+    padding: 10px;
+    width: 50vh;
+    border-radius: 10px;
+    border: none;
+    border-bottom: solid white 2px;
+    background-color: transparent;
+}
+
+.contactform .divi input::placeholder {
+    color: white;
+}
+
+.contactform .divi input:focus {
+    color: white;
+    outline: none;
+}
+
+.contactform .divi textarea {
+    display: flex;
+    padding: 10px;
+    width: 50vh;
+    border-radius: 10px;
+    border: none;
+    border-bottom: solid white 2px;
+    background-color: transparent;
+}
+
+.contactform .divi textarea::placeholder {
+    color: white;
+}
+
+.contactform .divi textarea:focus {
+    color: white;
+    outline: none;
+}
+
+.contactform .divi button {
+    color: white;
+    padding: 5px;
+    border-radius: 15px 2px 8px 10px;
+    font-weight: bold;
+    border: solid white 2px;
+    background-color: transparent;
+}
+
+.contactform .divi button:hover {
+    color: rgb(11, 1, 37);
+    background-color: rgba(219, 205, 205, 0.61);
+    box-shadow: rgba(44, 22, 63, 0.507) 0px 4px 12px;
+    transition: 0.5s;
+}
+
+.conimg {
+    display: flex;
+    padding: 20px;
+    gap: 5px
+}
+
+.conimg i {
+    padding: 5px;
+    border: solid rgb(50, 3, 88) 2px;
+    border-radius: 50%;
+}
+
+.conimg i:hover {
+    transform: scale(1.3);
+    box-shadow: rgba(49, 14, 80, 0.507) 0px 4px 12px;
+}
+
+#contact #upicon {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    border: solid rgb(50, 3, 88) 2px;
+    backdrop-filter: blur(5px);
+    border-radius: 50%;
+    padding: 10px;
+    position: fixed;
+    right: 20px;
+    bottom: 30px;
+    z-index: 50;
+}
+
+#contact #upicon:hover {
+    transform: scale(1.1);
+    box-shadow: rgba(49, 14, 80, 0.507) 0px 4px 12px;
+    color: aqua;
+}
+
+/*responsive screens*/
+@media screen and (max-width:700px) {
+    .navicon {
+        display: block;
+    }
+
+    .navbarlink a {
+        display: none;
+    }
+
+    .profilecon {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pic {
+        top: 10px;
+        text-align: center;
+    }
+
+    .skillcon {
+        flex-direction: column;
+    }
+}
+
+/*keyframes*/
+@keyframes html {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 95%;
+    }
+}
+
+@keyframes css {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 78%;
+    }
+}
+
+@keyframes javascript {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 65%;
+    }
+}
+
+@keyframes ui {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 65%;
+    }
+}
+
+@keyframes python {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 75%;
+    }
+}
+
+@keyframes java {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 65%;
+    }
+}
+
+@keyframes c {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 65%;
+    }
+}
