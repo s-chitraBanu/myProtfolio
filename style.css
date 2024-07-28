@@ -414,6 +414,11 @@ body {
     object-fit: cover;
 }
 
+.projcard:hover{
+    border: rgba(155, 66, 206, 0.267) solid 2px;
+    box-shadow: rgba(115, 54, 184, 0.753) 0px 4px 12px;
+}
+
 .projcard:hover .cardbtn {
     opacity: 1;
 }
